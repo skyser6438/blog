@@ -6,109 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hwanjun blog</title>
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/default-style.css">
     <style>
-        /* CSS Reset */
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            border: none;
-            padding: 0;
-        }
-        a{
-            color: black;
-             text-decoration: none;
-        }
-        /* Grid */
-        .col01{width: 75px}
-        .col02{width: 165px;}
-        .col03{width: 255px;}
-        .col04{width: 345px;}
+       /* CSS Reset */
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+a{
+    color: black;
+     text-decoration: none;
+}
+/* Grid */
+.col01{width: 75px}
+.col02{width: 165px;}
+.col03{width: 255px;}
+.col04{width: 345px;}
 
-         #warp{
-            width: 375px;
-            height: 812px;
-            margin: 0 auto;
-            
-            /* background-image: url(./images/bg-img.jpg); */
-            background-image: radial-gradient(circle, rgba(157,206,141,0.1) ,#9dce8d);
-         }
-         /* header 스타일 시작 */
-         header{
-            width: 375px;
-            height: 63px;
-            padding: 0 15px 0 15px;
-         }
-         h1{
-            float: left;
-         }
-         .search{
-            float: right;
-            margin-top: 17px;
-            display: none;
-         }
-         h1 a{
-            font-family: noto sans KR;
-            font-weight: 900;
-            font-size: 20px;
-            
-         }
-         /* header 스타일 끝 */
-         /* section 스타일 시작 */
-         section{
-            width: 375px;
-            height: 679px;
-         }
-         /* section 스타일 끝 */
+ #warp{
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    
+    /* background-image: url(./images/bg-img.jpg); */
+    background-image: radial-gradient(circle, rgba(157,206,141,0.1) ,#9dce8d);
+ }
+ /* header 스타일 시작 */
+ header{
+    width: 375px;
+    height: 63px;
+    padding: 0 15px 0 15px;
+ }
+ h1{
+    float: left;
+ }
+ .search{
+    float: right;
+    margin-top: 17px;
+   
+ }
+ .no-show{
+    display: none;
+ }
+ h1 a{
+    font-family: noto sans KR;
+    font-weight: 900;
+    font-size: 20px;
+    
+ }
+ /* header 스타일 끝 */
+ /* section 스타일 시작 */
+ section{
+    width: 375px;
+    height: 679px;
+ }
+ .sec-contents{
+    padding-top: 229px;
+ }
+ .img-box{
+    width: 165px;
+    height: 165px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+ }
+ .img-box img{
+    width: 288px;
+    position: absolute;
+    left: -51px;
+    top: -18px;
+ }
+ section h2{
+    font-family: Noto sans KR;
+    font-weight: 700;
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+ }
 
-         /* FOTTER 스타일 시작 */
-        footer{
-            width: 375px;
-            height: 70px;
-            padding: 15px;
-        }
-        footer div{
-            height: 40px;
-            margin-right: 10px;
-            border: 2px solid #2e7a15;
-            padding-top: 7px;
-            border-radius:8px;
-            background-color: #2e7a15;
-            float: left;
-            text-align: center;
-        }
-        footer.mr0{
-            margin-right: 0;
-        }
-        footer a{
-            font-family: Noto Sans KR;
-            font-weight: 700;
-            font-size: 16px;
-            color: #ffffff;
-        }
-        footer .inv{
-            border: 2px solid #2e7a15;
-            background-color: #ffffff;
-        }
-        footer .inv a{
-            color: #2e7a15;
-        }
-         /* FOTTSER 스타일 끝 */
+ section p{
+    font-family: Noto Sans KR;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+ }
+ /* section 스타일 끝 */
+
+ /* FOTTER 스타일 시작 */
+footer{
+    width: 375px;
+    height: 70px;
+    padding: 15px;
+}
+footer div{
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid #2e7a15;
+    padding-top: 7px;
+    border-radius:8px;
+    background-color: #2e7a15;
+    float: left;
+    text-align: center;
+}
+footer.mr0{
+    margin-right: 0;
+}
+footer a{
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+}
+footer .inv{
+   background-color: #ffffff;
+}
+footer .inv a{
+    color: #2e7a15;
+}
+ /* FOTTSER 스타일 끝 */
     </style>
 </head>
 <body>
     <div id="warp">
         <header>
             <h1><a href="./index.html">SungJin</a></h1>
-            <div class="search">
+            <div class="search no-show">
                 <img src="./images/search.png" alt="검색버튼"></div>
+                
         </header>
-        <section>페이지 컨텐츠 영역</section>
+        <section>
+            <div class="sec-contents">
+                <div class="img-box">
+                    <img src="./images/cat01.jpg" alt="고양이">
+                </div>
+                <h2>Kim SungJin</h2>
+                <p>어서오세요! 좋은하루입니다.</p>
+            </div>
+
+        </section>
         <footer>
             <div class="col02"><a href="./photos.html">사진첩</a>
             </div>
             <div class="col01"><a href="./notice.html">게시판</a>
             </div>
-            <div class="col01"><a href="./follower.html"> 이웃</a>
+            <div class="col01 mr0"><a href="./follower.html"> 이웃</a>
             </div>
         </footer>
     </div>
